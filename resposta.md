@@ -1,8 +1,8 @@
 # Respostas — Avaliação Prática II de Banco de Dados I
 
-**Acadêmico(a):**  
-**RA:**  
-**Data:**
+**Acadêmico(a): Arthur Pedrinho de Paula**  
+**RA: 145100**  
+**Data: 26/11/2026**
 
 ## Orientações
 
