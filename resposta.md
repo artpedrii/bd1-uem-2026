@@ -12,13 +12,21 @@ Preencha os blocos SQL com as consultas finais, testadas no Supabase. Utilize os
 
 ### 1.a
 
-```sql
+```
+SELECT nome, preco, estoque 
+FROM avaliacao_bd2.produto 
+WHERE preco > 100.0 AND estoque >= 5
+ORDER BY preco DESC 
 
 ```
 
 ### 1.b
 
-```sql
+```
+SELECT *
+FROM avaliacao_bd2.produto
+WHERE preco BETWEEN 50.0 AND 1000.0
+ORDER BY nome 
 
 ```
 
