@@ -58,20 +58,24 @@ O LEFT JOIN não exige que HAJA correspondência, apenas exibe o que ta na esque
 
 ### 3.a
 
-```sql
-
+```
+SELECT COUNT (*) AS quantidade_produtos_cadastrados, SUM(estoque) AS quantidade_total_estoque, AVG(preco) AS media, MIN(preco) AS menor_valor, MAX(preco) AS maior_valor
+FROM avaliacao_bd2.produto
 ```
 
 ### 3.b
 
-```sql
-
+```
+SELECT sum(preco * estoque) AS valor_financeiro_estoque
+FROM avaliacao_bd2.produto
 ```
 
 ### 3.c
 
-```sql
-
+```
+SELECT produto.id_categoria, estoque AS quantidade 
+FROM avaliacao_bd2.produto
+WHERE estoque > 2
 ```
 
 ## Questão 4 — Relacionamentos e agregações
