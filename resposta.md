@@ -34,19 +34,25 @@ ORDER BY nome
 
 ### 2.a
 
-```sql
-
+```
+SELECT p.nome AS avaliacao_bd2.produto, p.preco, c.nome AS avaliacao_bd2.categoria
+FROM avaliacao_bd2.produto p
+INNER JOIN categoria c ON c.id_categoria = p.id_categoria 
 ```
 
 ### 2.b
 
-```sql
-
+```
+SELECT c.nome AS categoria, p.nome AS produto
+FROM avaliacao_bd2.categoria c 
+LEFT JOIN avaliacao_bd2.produto p ON p.id_categoria = c.id_categoria 
 ```
 
 ### 2.c
 
-**Resposta:**
+**Resposta: Porque na questão a) o INNER JOIN mostra todas as tabelas que possuem correspondência, limpeza não possui produto correspondente, logo fica de fora. 
+O LEFT JOIN mostra a tabela da esquerda (neste caso categoria) e suas correspondências (independente se existem ou não), Limpeza está em categoria e, mesmo sem correspondente ela aparece.
+O LEFT JOIN não exige que HAJA correspondência, apenas exibe o que ta na esquerda e seus correspondentes (NULL ou não). **
 
 ## Questão 3 — Agregações
 
