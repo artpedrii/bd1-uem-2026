@@ -52,7 +52,7 @@ LEFT JOIN avaliacao_bd2.produto p ON p.id_categoria = c.id_categoria
 
 **Resposta: Porque na questão a) o INNER JOIN mostra todas as tabelas que possuem correspondência, limpeza não possui produto correspondente, logo fica de fora. 
 O LEFT JOIN mostra a tabela da esquerda (neste caso categoria) e suas correspondências (independente se existem ou não), Limpeza está em categoria e, mesmo sem correspondente ela aparece.
-O LEFT JOIN não exige que HAJA correspondência, apenas exibe o que ta na esquerda e seus correspondentes (NULL ou não). **
+O LEFT JOIN não exige que HAJA correspondência, apenas exibe o que ta na esquerda e seus correspondentes (NULL ou não).**
 
 ## Questão 3 — Agregações
 
