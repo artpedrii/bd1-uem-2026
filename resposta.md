@@ -80,7 +80,7 @@ WHERE estoque > 2
 
 ## Questão 4 — Relacionamentos e agregações
 
-```sql
-
+```
+NAO SEI FAZER ESSA, TAMO JUNTO PROFESSOR JOAO CHOMA
 ```
 
